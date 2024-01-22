@@ -18,13 +18,13 @@ public class SumOfTwoNumberTest {
      sumOfNumber = new SumOfNumber();
      random = new Random();
      size = random.nextInt(15, 40);
-     input = random.ints(size, 4, 50).toArray();
+     input = random.ints(size, 4, 100).toArray();
     }
 
     @Test
     public void returnArrayOfSizeTwoWhenTargetSumIsPresent() {
-        final int a = random.nextInt(60, 70);
-        final int b = random.nextInt(80, 90);
+        final int a = random.nextInt(360, 370);
+        final int b = random.nextInt(380, 390);
         final int expectedIndexA = random.nextInt(0, size/2);
         final int expectedIndexB = random.nextInt(size/2 + 1, size);
         final int expectedTarget  = a + b;
